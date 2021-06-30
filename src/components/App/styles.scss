@@ -1,0 +1,50 @@
+.root {
+  font-family: sans-serif;
+  :global(.search) {
+    position: relative;
+    input {
+      box-sizing: border-box;
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #808080;
+      border-radius: 4px;
+      &:active, &:focus {
+        outline: 1px solid #808080;
+      }
+    }
+    ul {
+      position: absolute;
+      left: 0.5rem;
+      right: 0.5rem;
+      top: 2rem;
+      top: calc(2rem + 4px);
+      display: block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        margin: 0;
+        padding: 0.5rem;
+        border: 1px solid #808080;
+        background: white;
+        color: black;
+        cursor: pointer;
+        &:global(.active) {
+          background: #cdf;
+        }
+        &:not(:first-child) {
+          border-top: none;
+        }
+        :global(.type) {
+          font-size: 75%;
+          opacity: 0.5;
+          margin-left: 0.5em;
+        }
+      }
+    }
+  }
+
+}
+
+
