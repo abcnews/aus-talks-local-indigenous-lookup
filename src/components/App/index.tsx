@@ -30,7 +30,7 @@ for (let s of sa2) {
     autocomplete.push({
       type: 'sa2',
       name: s.name,
-      display: s.name.replace(/ - /g, ' / '),
+      display: s.name.replace(/ - /g, ' / ').replace(/ \(.*\)$/, ''),
       state: s.state,
       terms,
     });
@@ -47,8 +47,6 @@ for (let e of electorates) {
   });
 }
 
-// let electorateSearch = new Fuse(electorates, { includeScore: true, keys: ['name'] });
-// let sa2Search = new Fuse(sa2, { includeScore: true, keys: ['name', 'state'] });
 let autocompleteSearch = new Fuse(autocomplete, { threshold: 0.33, keys: ['terms'] });
 
 let electorateLookup: { [name: string]: Electorate } = {};
@@ -59,12 +57,40 @@ for (let e of electorates) {
 export type AppProps = {
 }
 
+let counter = 0;
+
 const App: React.FC<AppProps> = props => {
+  let [isIframe] = useState((window.self !== window.top) || document.body.classList.contains('iframe'));
+  let containerElement = useRef<HTMLDivElement | null>(null);
   let [searchInput, setSearchInput] = useState('');
   let [activeElectorates, setActiveElectorates] = useState<string[]>([]);
   let [activeAutocomplete, setActiveAutocomplete] = useState<Autocomplete[]>([]);
   let [autocompleteSelectedIndex, setAutocompleteSelectedIndex] = useState(0);
   let [searchResultsHeading, setSearchResultsHeading] = useState('');
+  let [inputId] = useState('aus-talks-local-indigenous-lookup-input-'+(counter++));
+  let [containerHeight, setContainerHeight] = useState<number | undefined>(undefined);
+  let [updateSizeDebounce, setUpdateSizeDebounce] = useState<number | undefined>(undefined);
+  let updateSize = () => {
+    if (updateSizeDebounce) {
+      return;
+    }
+    let newUpdateSizeDebounce = window.setTimeout(() => {
+      setUpdateSizeDebounce(undefined);
+      if (containerElement.current instanceof HTMLDivElement) {
+        let newContainerHeight: number = Math.ceil(containerElement.current.scrollHeight)+32;
+        if (containerHeight !== newContainerHeight) {
+          setContainerHeight(newContainerHeight);
+          if (isIframe) {
+            window.parent.postMessage({ sentinel: 'amp', type: 'embed-size', height: newContainerHeight }, '*'); // notify parent page (AMP compatible)
+          }
+        }
+      }
+    }, 100);
+    setUpdateSizeDebounce(newUpdateSizeDebounce);
+  };
+  window.addEventListener('resize', updateSize);
+  window.addEventListener('orientationchange', updateSize);
+  useEffect(updateSize, [activeElectorates]); // runs on first render (similar to componentDidMount)
   let accept = () => {
     let a = activeAutocomplete[autocompleteSelectedIndex];
     if (a.type === 'sa2') {
@@ -76,7 +102,7 @@ const App: React.FC<AppProps> = props => {
       let newActiveElectorates = matchingSa2s.map(s => s.electorate);
       newActiveElectorates = [ ...new Set(newActiveElectorates) ]; // remove any duplicates
       setActiveElectorates(newActiveElectorates);
-      setSearchResultsHeading('Electorates in '+(a.state ? `${a.display}, ${a.state}` : a.display));
+      setSearchResultsHeading((newActiveElectorates.length === 1 ? '1 electorate in ' : newActiveElectorates.length+' electorates in ')+(a.state ? `${a.display}, ${a.state}` : a.display));
     }
     else { // electorate
       setActiveElectorates([a.name]);
@@ -117,7 +143,7 @@ const App: React.FC<AppProps> = props => {
       setActiveElectorates(newActiveElectorates);
       setActiveAutocomplete([]);
       setAutocompleteSelectedIndex(0);
-      setSearchResultsHeading(`Electorates in postcode ${searchInput}`);
+      setSearchResultsHeading(`${newActiveElectorates.length === 1 ? '1 electorate' : newActiveElectorates.length+' electorates'} in postcode ${searchInput}`);
     }
     else {
       // suburb or electorate search
@@ -128,12 +154,15 @@ const App: React.FC<AppProps> = props => {
   };
   useEffect(search, [searchInput]);
   return (
-    <div className={styles.root}>
+    <div className={styles['aus-talks-local-indigenous-lookup']} ref={containerElement} data-containerheight={containerHeight}>
       <div className="search">
-        <input type="search" placeholder="Enter a postcode, suburb or electorate" value={searchInput} onChange={e => setSearchInput(e.target.value)} onKeyDown={e => handleKey(e.keyCode)} />
+        <div className="form">
+          <label htmlFor={inputId}>Search</label>
+          <input id={inputId} type="search" placeholder="Postcode, suburb or electorate" value={searchInput} onChange={e => setSearchInput(e.target.value)} onKeyDown={e => handleKey(e.keyCode)} />
+        </div>
         <ul>
           { activeAutocomplete.map((a, i) => {
-            return <li data-index={i} data-type={a.type} data-name={a.name} className={i === autocompleteSelectedIndex ? 'active' : undefined} onMouseOver={e => setAutocompleteSelectedIndex(i)} onClick={accept}><span className="display">{a.state ? a.display+', '+a.state : a.display}</span> <span className="type">{a.type === 'sa2' ? 'Suburb' : 'Electorate'}</span></li>;
+            return <li data-index={i} data-type={a.type} data-name={a.name} className={i === autocompleteSelectedIndex ? 'active' : undefined} onMouseOver={e => setAutocompleteSelectedIndex(i)} onClick={accept}><span className="type">{a.type === 'sa2' ? 'Suburb' : 'Electorate'}</span> <span className="display">{a.state ? a.display+', '+a.state : a.display}</span></li>;
           })}
         </ul>
       </div>
@@ -141,13 +170,23 @@ const App: React.FC<AppProps> = props => {
         activeElectorates.length > 0 ? (
           <div className="results">
             { searchResultsHeading ? <h2>{searchResultsHeading}</h2> : undefined }
-            <ul className="electorates">
-              { activeElectorates.map(name => {
-                let electorate = electorateLookup[name];
-                return electorate ? <li>{electorate.name}, {electorate.state}: {electorate.agree.toFixed(0)}%</li> : undefined;
-              })}
-              <li>Average across Australia: {australiaAgree.toFixed(0)}%</li>
-            </ul>
+            <table className="electorates">
+              <tbody>
+                { activeElectorates.map(name => {
+                  let electorate = electorateLookup[name];
+                  return electorate ? <tr key={electorate.name}>
+                    <td className="name">{electorate.name}</td>
+                    <td className="chart"><span><span style={{ width: electorate.agree.toFixed(0)+'%' }}></span></span></td>
+                    <td className="value">{electorate.agree.toFixed(0)}% agree</td>
+                  </tr> : undefined;
+                })}
+                <tr className="australia" key="australia">
+                  <td className="name">National average</td>
+                  <td className="chart"><span><span style={{ width: australiaAgree.toFixed(0)+'%' }}></span></span></td>
+                  <td className="value">{australiaAgree.toFixed(0)}% agree</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         ) : undefined
       }
