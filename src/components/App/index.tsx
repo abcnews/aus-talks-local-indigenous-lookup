@@ -81,6 +81,7 @@ const App: React.FC<AppProps> = props => {
         if (containerHeight !== newContainerHeight) {
           setContainerHeight(newContainerHeight);
           if (isIframe) {
+            console.log('newContainerHeight', newContainerHeight, Date.now());
             window.parent.postMessage({ sentinel: 'amp', type: 'embed-size', height: newContainerHeight }, '*'); // notify parent page (AMP compatible)
           }
         }
@@ -139,7 +140,7 @@ const App: React.FC<AppProps> = props => {
       let minMeshblocks = totalMeshblocks * 0.1;
       matchingPostcodes = matchingPostcodes.filter(p => p.meshblock_count >= minMeshblocks);
       newActiveElectorates = matchingPostcodes.map(p => p.electorate);
-      newActiveElectorates = [ ...new Set(newActiveElectorates) ]; // remove any duplicates
+      newActiveElectorates = [ ...new Set(newActiveElectorates) ].slice(0, 3); // remove any duplicates and limit to 3 electorates
       setActiveElectorates(newActiveElectorates);
       setActiveAutocomplete([]);
       setAutocompleteSelectedIndex(0);
@@ -154,7 +155,7 @@ const App: React.FC<AppProps> = props => {
   };
   useEffect(search, [searchInput]);
   return (
-    <div className={styles['aus-talks-local-indigenous-lookup']} ref={containerElement} data-containerheight={containerHeight}>
+    <div className={styles['aus-talks-local-indigenous-lookup']} ref={containerElement} data-numelectorates={activeElectorates.length} data-containerheight={containerHeight || 'unknown'} data-isiframe={isIframe ? 'true' : 'false'}>
       <div className="search">
         <div className="form">
           <label htmlFor={inputId}>Search</label>

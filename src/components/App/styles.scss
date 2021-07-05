@@ -154,7 +154,6 @@ $url-font-serif: '#{$url-fonts-root}abcserif/abcserif';
   :global(.results) {
     font-size: 1.5rem;
     line-height: 0.9;
-    margin-bottom: 1.5rem;
     @media only screen and (max-width: 500px) { // mobile
       font-size: 1.25rem;
     }
@@ -176,43 +175,68 @@ $url-font-serif: '#{$url-fonts-root}abcserif/abcserif';
         margin: 1rem 0;
         padding: 0;
         color: $yellow;
-        td {
-          padding-bottom: 1rem;
-        }
-        td:global(.name) {
-          width: 10%;
-          vertical-align: middle;
-          padding-right: 1rem;
-          text-align: right;
-        }
-        td:global(.chart) {
-          width: 80%;
-          vertical-align: middle;
-          > span {
-            position: relative;
-            border-radius: 0.5rem;
-            border: 3px solid currentColor;
-            overflow: hidden;
-            width: 100%;
-            height: 3rem;
-            display: block;
-            > span {
-              position: absolute;
-              display: block;
-              left: 0;
-              top: 0;
-              bottom: 0;
-              background-color: currentColor;
-            }
-          }
-        }
-        td:global(.value) {
-          width: 10%m;
-          vertical-align: middle;
-          padding-left: 1rem;
-        }
         &:global(.australia) {
           color: $blue;
+        }
+      }
+      td {
+        padding-bottom: 1rem;
+      }
+      td:global(.name) {
+        width: 10%;
+        vertical-align: middle;
+        padding-right: 1rem;
+        text-align: right;
+      }
+      td:global(.chart) {
+        width: 80%;
+        vertical-align: middle;
+        > span {
+          position: relative;
+          border-radius: 0.5rem;
+          border: 3px solid currentColor;
+          overflow: hidden;
+          width: 100%;
+          height: 3rem;
+          display: block;
+          > span {
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-color: currentColor;
+          }
+        }
+      }
+      td:global(.value) {
+        width: 10%m;
+        vertical-align: middle;
+        padding-left: 1rem;
+      }
+
+    }
+  }
+  &[data-numelectorates="2"] {
+    :global(.results) {
+      font-size: 1.25rem;
+      table {
+        td:global(.chart) {
+          > span {
+            height: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+  &[data-numelectorates="3"] {
+    :global(.results) {
+      font-size: 1rem;
+      table {
+        td:global(.chart) {
+          > span {
+            height: 2rem;
+          }
         }
       }
     }
