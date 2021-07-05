@@ -90,7 +90,7 @@ const App: React.FC<AppProps> = props => {
   };
   window.addEventListener('resize', updateSize);
   window.addEventListener('orientationchange', updateSize);
-  useEffect(updateSize, [activeElectorates]); // runs on first render (similar to componentDidMount)
+  useEffect(updateSize, [activeElectorates, searchResultsHeading]);
   let accept = () => {
     let a = activeAutocomplete[autocompleteSelectedIndex];
     if (a.type === 'sa2') {
@@ -158,7 +158,7 @@ const App: React.FC<AppProps> = props => {
       <div className="search">
         <div className="form">
           <label htmlFor={inputId}>Search</label>
-          <input id={inputId} type="search" placeholder="Postcode, suburb or electorate" value={searchInput} onChange={e => setSearchInput(e.target.value)} onKeyDown={e => handleKey(e.keyCode)} />
+          <input id={inputId} type="text" placeholder="Postcode, suburb or electorate" value={searchInput} onChange={e => setSearchInput(e.target.value)} onKeyDown={e => handleKey(e.keyCode)} />
         </div>
         <ul>
           { activeAutocomplete.map((a, i) => {
