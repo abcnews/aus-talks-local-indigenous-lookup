@@ -143,7 +143,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Albany",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 300,
 		sa1_count: 38
 	},
@@ -157,7 +157,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Albany Region",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 120,
 		sa1_count: 10
 	},
@@ -1193,7 +1193,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Bayonet Head - Lower King",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 65,
 		sa1_count: 12
 	},
@@ -2103,7 +2103,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Boulder",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 129,
 		sa1_count: 18
 	},
@@ -2292,7 +2292,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Bridgetown - Boyup Brook",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 274,
 		sa1_count: 19
 	},
@@ -2432,7 +2432,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Brookton",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 206,
 		sa1_count: 10
 	},
@@ -4154,7 +4154,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Collie",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 267,
 		sa1_count: 30
 	},
@@ -5078,7 +5078,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Denmark",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 167,
 		sa1_count: 21
 	},
@@ -5960,14 +5960,14 @@ export const sa2: Sa2[] = [
 	{
 		name: "Esperance",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 257,
 		sa1_count: 36
 	},
 	{
 		name: "Esperance Region",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 559,
 		sa1_count: 15
 	},
@@ -7045,7 +7045,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Gnowangerup",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 143,
 		sa1_count: 11
 	},
@@ -8767,21 +8767,21 @@ export const sa2: Sa2[] = [
 	{
 		name: "Kalgoorlie",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 252,
 		sa1_count: 32
 	},
 	{
 		name: "Kalgoorlie - North",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 125,
 		sa1_count: 31
 	},
 	{
 		name: "Kalgoorlie Airport",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 4,
 		sa1_count: 1
 	},
@@ -8795,7 +8795,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Kambalda - Coolgardie - Norseman",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 201,
 		sa1_count: 18
 	},
@@ -8886,7 +8886,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Katanning",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 187,
 		sa1_count: 14
 	},
@@ -9425,7 +9425,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Kojonup",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 263,
 		sa1_count: 13
 	},
@@ -9488,7 +9488,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Kulin",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 339,
 		sa1_count: 18
 	},
@@ -9838,7 +9838,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Leinster - Leonora",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 128,
 		sa1_count: 19
 	},
@@ -10027,7 +10027,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Little Grove - Elleker",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 84,
 		sa1_count: 11
 	},
@@ -10566,7 +10566,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Manjimup",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 128,
 		sa1_count: 16
 	},
@@ -10860,7 +10860,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "McKail - Willyung",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 133,
 		sa1_count: 25
 	},
@@ -12106,7 +12106,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Murray",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 56,
 		sa1_count: 2
 	},
@@ -12379,7 +12379,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Narrogin",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 119,
 		sa1_count: 13
 	},
@@ -13049,14 +13049,14 @@ export const sa2: Sa2[] = [
 		sa1_count: 15
 	},
 	{
-		name: "OConnor (ACT)",
+		name: "O'Connor (ACT)",
 		state: "ACT",
 		electorate: "Canberra",
 		meshblock_count: 82,
 		sa1_count: 14
 	},
 	{
-		name: "OConnor (WA)",
+		name: "O'Connor (WA)",
 		state: "WA",
 		electorate: "Fremantle",
 		meshblock_count: 20,
@@ -13723,7 +13723,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Pemberton",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 249,
 		sa1_count: 11
 	},
@@ -13940,7 +13940,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Plantagenet",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 111,
 		sa1_count: 16
 	},
@@ -16173,7 +16173,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Stirling Range National Park",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 10,
 		sa1_count: 1
 	},
@@ -17118,7 +17118,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Trafalgar (WA)",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 20,
 		sa1_count: 1
 	},
@@ -17566,7 +17566,7 @@ export const sa2: Sa2[] = [
 	{
 		name: "Wagin",
 		state: "WA",
-		electorate: "OConnor",
+		electorate: "O'Connor",
 		meshblock_count: 270,
 		sa1_count: 15
 	},

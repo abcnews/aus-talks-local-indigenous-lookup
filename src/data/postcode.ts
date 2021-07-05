@@ -218,7 +218,7 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 872,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 11,
 		"sa1_count": 6
 	},
@@ -18560,7 +18560,7 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6207,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 4,
 		"sa1_count": 1
 	},
@@ -18596,7 +18596,7 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6213,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 24,
 		"sa1_count": 1
 	},
@@ -18638,7 +18638,7 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6221,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 2,
 		"sa1_count": 1
 	},
@@ -18656,7 +18656,7 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6225,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 277,
 		"sa1_count": 32
 	},
@@ -18734,7 +18734,7 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6243,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 6,
 		"sa1_count": 1
 	},
@@ -18746,7 +18746,7 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6244,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 73,
 		"sa1_count": 5
 	},
@@ -18770,25 +18770,25 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6254,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 20,
 		"sa1_count": 2
 	},
 	{
 		"postcode": 6255,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 134,
 		"sa1_count": 14
 	},
 	{
 		"postcode": 6256,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 38,
 		"sa1_count": 3
 	},
 	{
 		"postcode": 6258,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 197,
 		"sa1_count": 20
 	},
@@ -18800,7 +18800,7 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6260,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 76,
 		"sa1_count": 6
 	},
@@ -18812,7 +18812,7 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6262,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 48,
 		"sa1_count": 2
 	},
@@ -18896,13 +18896,13 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6306,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 64,
 		"sa1_count": 3
 	},
 	{
 		"postcode": 6308,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 91,
 		"sa1_count": 5
 	},
@@ -18914,235 +18914,235 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6309,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 10,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6311,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 39,
 		"sa1_count": 3
 	},
 	{
 		"postcode": 6312,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 146,
 		"sa1_count": 15
 	},
 	{
 		"postcode": 6313,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 21,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6315,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 118,
 		"sa1_count": 8
 	},
 	{
 		"postcode": 6316,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 29,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6317,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 164,
 		"sa1_count": 14
 	},
 	{
 		"postcode": 6318,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 34,
 		"sa1_count": 3
 	},
 	{
 		"postcode": 6320,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 45,
 		"sa1_count": 3
 	},
 	{
 		"postcode": 6321,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 55,
 		"sa1_count": 3
 	},
 	{
 		"postcode": 6322,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 14,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6323,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 26,
 		"sa1_count": 3
 	},
 	{
 		"postcode": 6324,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 73,
 		"sa1_count": 12
 	},
 	{
 		"postcode": 6326,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 7,
 		"sa1_count": 2
 	},
 	{
 		"postcode": 6327,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 4,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6328,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 30,
 		"sa1_count": 2
 	},
 	{
 		"postcode": 6330,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 663,
 		"sa1_count": 95
 	},
 	{
 		"postcode": 6333,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 167,
 		"sa1_count": 21
 	},
 	{
 		"postcode": 6335,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 25,
 		"sa1_count": 3
 	},
 	{
 		"postcode": 6336,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 21,
 		"sa1_count": 2
 	},
 	{
 		"postcode": 6337,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 27,
 		"sa1_count": 4
 	},
 	{
 		"postcode": 6338,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 67,
 		"sa1_count": 6
 	},
 	{
 		"postcode": 6341,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 9,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6343,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 6,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6346,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 89,
 		"sa1_count": 6
 	},
 	{
 		"postcode": 6348,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 36,
 		"sa1_count": 5
 	},
 	{
 		"postcode": 6350,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 26,
 		"sa1_count": 2
 	},
 	{
 		"postcode": 6351,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 3,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6352,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 15,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6353,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 37,
 		"sa1_count": 5
 	},
 	{
 		"postcode": 6355,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 32,
 		"sa1_count": 4
 	},
 	{
 		"postcode": 6356,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 8,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6357,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 8,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6358,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 13,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6359,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 31,
 		"sa1_count": 3
 	},
 	{
 		"postcode": 6361,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 6,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6363,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 8,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6365,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 58,
 		"sa1_count": 3
 	},
 	{
 		"postcode": 6367,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 28,
 		"sa1_count": 2
 	},
@@ -19160,25 +19160,25 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6370,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 31,
 		"sa1_count": 3
 	},
 	{
 		"postcode": 6372,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 11,
 		"sa1_count": 2
 	},
 	{
 		"postcode": 6373,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 6,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6375,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 44,
 		"sa1_count": 4
 	},
@@ -19214,13 +19214,13 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6390,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 26,
 		"sa1_count": 2
 	},
 	{
 		"postcode": 6391,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 35,
 		"sa1_count": 3
 	},
@@ -19232,43 +19232,43 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6392,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 23,
 		"sa1_count": 4
 	},
 	{
 		"postcode": 6393,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 6,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6394,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 17,
 		"sa1_count": 4
 	},
 	{
 		"postcode": 6395,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 58,
 		"sa1_count": 5
 	},
 	{
 		"postcode": 6396,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 43,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6397,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 10,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6398,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 56,
 		"sa1_count": 3
 	},
@@ -19412,103 +19412,103 @@ export const postcodes: Postcode[] = [
 	},
 	{
 		"postcode": 6429,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 42,
 		"sa1_count": 5
 	},
 	{
 		"postcode": 6430,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 383,
 		"sa1_count": 64
 	},
 	{
 		"postcode": 6431,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 39,
 		"sa1_count": 6
 	},
 	{
 		"postcode": 6432,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 130,
 		"sa1_count": 19
 	},
 	{
 		"postcode": 6434,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 12,
 		"sa1_count": 4
 	},
 	{
 		"postcode": 6436,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 31,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6437,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 12,
 		"sa1_count": 4
 	},
 	{
 		"postcode": 6438,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 27,
 		"sa1_count": 3
 	},
 	{
 		"postcode": 6440,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 37,
 		"sa1_count": 5
 	},
 	{
 		"postcode": 6442,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 70,
 		"sa1_count": 10
 	},
 	{
 		"postcode": 6443,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 65,
 		"sa1_count": 4
 	},
 	{
 		"postcode": 6445,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 16,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6446,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 7,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6447,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 15,
 		"sa1_count": 2
 	},
 	{
 		"postcode": 6448,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 6,
 		"sa1_count": 1
 	},
 	{
 		"postcode": 6450,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 552,
 		"sa1_count": 41
 	},
 	{
 		"postcode": 6452,
-		"electorate": "OConnor",
+		"electorate": "O'Connor",
 		"meshblock_count": 93,
 		"sa1_count": 1
 	},
