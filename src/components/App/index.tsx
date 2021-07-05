@@ -191,6 +191,7 @@ const App: React.FC<AppProps> = props => {
           </div>
         ) : undefined
       }
+      <div className="credits">Developer: Andrew Kesper. Electorate boundaries © AEC.</div>
     </div>
   );
 };

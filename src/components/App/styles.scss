@@ -214,10 +214,19 @@ $url-font-serif: '#{$url-fonts-root}abcserif/abcserif';
         vertical-align: middle;
         padding-left: 1rem;
       }
-
     }
   }
-  &[data-numelectorates="2"] {
+  :global(.credits) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    font-size: 10px;
+    color: transparent;
+    overflow: hidden;
+  }
+  &[data-isiframe="true"][data-numelectorates="2"] {
     :global(.results) {
       font-size: 1.25rem;
       table {
@@ -229,7 +238,7 @@ $url-font-serif: '#{$url-fonts-root}abcserif/abcserif';
       }
     }
   }
-  &[data-numelectorates="3"] {
+  &[data-isiframe="true"][data-numelectorates="3"] {
     :global(.results) {
       font-size: 1rem;
       table {
